@@ -1,0 +1,232 @@
+:root {
+  font-size: 62.5%;
+
+  --white: rgb(255, 255, 255);
+  --dark-blue: rgb(10, 36, 59);
+  --blue: rgb(13, 57, 94);
+  --light-blue: rgb(0, 116, 204);
+  --light-green: rgb(166, 232, 44);
+}
+
+@font-face {
+  font-family: "Comication";
+  src: url(font/Comication.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #0075cd;
+  color: white;
+
+  height: 12vh;
+
+  padding: 25px 50px;
+
+  font-family: "Comication", sans-serif;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+#menu {
+  background-color: #09243b;
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+
+  height: 18vh;
+  padding: 25px 50px 50px 600px;
+
+
+}
+
+#menu #start {
+    position: absolute;
+    top: 17%;
+    left: 12%;
+}
+
+button {
+  width: 170px;
+  height: 40px;
+
+  background-color: var(--light-green);
+  color: var(--dark-blue);
+
+  font-size: 2.5rem;
+
+  border-radius: 10px;
+
+  margin-bottom: 9px;
+
+  transition: background 0.5s;
+}
+
+button:hover {
+  background-color: #0075cd;
+  color: var(--white);
+}
+
+.buttonActivate {
+  background-color: #0075cd;
+  color: var(--white);
+}
+
+button#restart {
+  width: 200px;
+  height: 70px;
+}
+
+#menu #whoPlay {
+  font-size: 3rem;
+}
+
+#chooseMode {
+  display: flex;
+}
+
+#menu #chooseMode h2 {
+  font-size: 3.7rem;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+#menu #buttonsModoPlayer {
+  width: 20vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#menu #chooseMode button#singlePlayer,
+#menu #chooseMode button#multiPlayer {
+  font-size: 2rem;
+
+  margin-bottom: 0;
+
+  width: 100%;
+  height: 40px;
+
+}
+
+#levels, #turns {
+  width: 400px;
+  height: 150px;
+
+  font-family: 'Roboto';
+  font-size: 1.7rem;
+  color: var(--white);
+
+  padding: 20px;
+
+  border: solid var(--light-green);
+
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+#levels #buttonsChooseLevel {
+  margin-top: 30px;
+}
+
+#turns {
+  display: none;
+}
+
+#turns h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#turns #whoPlay {
+  margin-top: 25px;
+
+  font-size: 3rem;
+  color: var(--light-green);
+  text-align: center;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 70vh;
+
+  padding-top: 50px;
+
+  background-color: var(--blue);
+}
+
+#game {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  
+  color: var(--white);
+
+  border: solid var(--light-green) 5px;
+  
+  margin: 0 auto;
+
+}
+.afterGame {
+  width: 125px;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+#p1 {
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+#p2 {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+#p3 {
+  border-left: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+#p4 {
+  border-right: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+#p5 {
+  border: 1px solid var(--white);
+}
+#p6 {
+  border-left: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+#p7 {
+  border-right: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+}
+#p8 {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+}
+#p9 {
+  border-left: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+}
